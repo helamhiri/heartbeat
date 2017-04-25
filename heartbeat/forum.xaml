@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="heartbeat.forum"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:heartbeat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar  Background="#FF9F7DAC">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="AddFriend" Label="listener" Click="AppBarButton_Click"/>
+            <AppBarButton Icon="Message" Label="forum"/>
+            <AppBarButton Icon="People" Label="doctor" Click="AppBarButton_Click_2"/>
+            <AppBarButton Icon="Add" Label="inspire" Click="AppBarButton_Click_1"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Margin="0,-22,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/forom.png" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="75*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="1">
+            <Image Source="Assets/forum11.png"/>
+
+        </ScrollViewer>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="38" Margin="127,137,0,0" Grid.Row="1" VerticalAlignment="Top" Width="68" Background="#02000000" Click="button_Click"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="46" Margin="233,224,0,0" Grid.Row="1" VerticalAlignment="Top" Width="50" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/float.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

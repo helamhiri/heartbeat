@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="heartbeat.payy"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:heartbeat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar  Background="#FF9F7DAC">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="AddFriend" Label="listener" Click="AppBarButton_Click" />
+            <AppBarButton Icon="Message" Label="forum" Click="AppBarButton_Click_1" />
+            <AppBarButton Icon="People" Label="doctor" Click="AppBarButton_Click_2"/>
+            <AppBarButton Icon="Add" Label="inspire" Click="AppBarButton_Click_3" />
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Margin="0,-22,0,0">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/payrq.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="118*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="112*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="137*"/>
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="close" Grid.Column="2" Grid.Row="2" Height="36" Width="137" Background="#02000000" Click="close_Click"/>
+        <Button x:Name="back" Grid.Column="1" Grid.Row="2" Height="36" Width="155" Background="#02000000" Click="back_Click"/>
+    </Grid>
+</Page>

@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="heartbeat.signinsup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:heartbeat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,-22,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/notsupp.png" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="132*"/>
+            <RowDefinition Height="210*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="152*"/>
+            <RowDefinition Height="132*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="back" Grid.Row="2" Margin="160,11.667,0,10.333" Height="13" Width="55" Click="return_Click"/>
+    </Grid>
+</Page>

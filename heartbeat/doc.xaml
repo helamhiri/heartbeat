@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="heartbeat.doc"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:heartbeat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar  Background="#FF9F7DAC">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="AddFriend" Label="listener" Click="AppBarButton_Click" />
+            <AppBarButton Icon="Message" Label="forum" Click="AppBarButton_Click_1" />
+            <AppBarButton Icon="People" Label="doctor"/>
+            <AppBarButton Icon="Add" Label="inspire" Click="AppBarButton_Click_2" />
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Margin="0,-22,0,0">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/doc.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="102*"/>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="103*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="112*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="45*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="talk1" Grid.Row="4" Grid.Column="0" Margin="89,0,0,0" Width="90" Height="24" Background="#02000000" Click="talk1_Click"/>
+        <Button x:Name="book1" Grid.Row="4" Grid.Column="1" Margin="9,0,0,0" Width="90" Height="24" Background="#02000000" Click="book1_Click"/>
+        <Button x:Name="talk2" Grid.Row="8" Grid.Column="0" Margin="89,0,0,0" Width="90" Height="24" Background="#02000000" Click="talk2_Click"/>
+    </Grid>
+</Page>

@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="heartbeat.upsup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:heartbeat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,-22,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/signupv.png" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="91*"/>
+            <RowDefinition Height="277*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="91*"/>
+        </Grid.RowDefinitions>
+        <PasswordBox x:Name="pass" PlaceholderText="type your password" Grid.Row="2" Margin="44,0,43,0" BorderBrush="{x:Null}"/>
+        <PasswordBox x:Name="conf" PlaceholderText="confirm your password" Grid.Row="4" Margin="44,0,43,0" BorderBrush="{x:Null}"/>
+        <Button x:Name="signin" Grid.Row="5" Margin="44,5,0,13" Height="46" Width="280" Background="#02000000" Click="signin_Click"/>
+    </Grid>
+</Page>

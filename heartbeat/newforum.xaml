@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="heartbeat.newforum"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:heartbeat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar  Background="#FF9F7DAC">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="AddFriend" Label="listener" Click="AppBarButton_Click_1"/>
+            <AppBarButton Icon="Message" Label="forum"/>
+            <AppBarButton Icon="People" Label="doctor" Click="AppBarButton_Click_2"/>
+            <AppBarButton Icon="Add" Label="inspire" Click="AppBarButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Margin="0,-22,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/forom.png" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="75*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1">
+            <Image Source="Assets/vide.png" />
+
+        </StackPanel>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Height="38" Margin="127,137,0,0" Grid.Row="1" VerticalAlignment="Top" Width="68" Background="#02000000"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="46" Margin="233,224,0,0" Grid.Row="1" VerticalAlignment="Top" Width="50" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/float.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="post" HorizontalAlignment="Left" Height="92" Margin="26,79,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="232" Grid.Row="1"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Height="46" Margin="14,192,0,0" VerticalAlignment="Top" Width="45" Grid.Row="1"  Background="#02000000" Click="button2_Click"/>
+
+    </Grid>
+</Page>
